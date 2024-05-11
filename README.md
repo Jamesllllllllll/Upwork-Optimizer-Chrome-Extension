@@ -22,4 +22,4 @@ Contributions are welcome. Please fork this repository and submit a pull request
 
 ## License
 
-This project is licensed under the MIT License - see the [Licence](LICENCE) file for details.
+This project is licensed under the MIT License - see the [License](LICENSE) file for details.
