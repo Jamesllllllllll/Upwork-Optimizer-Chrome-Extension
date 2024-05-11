@@ -2,6 +2,10 @@
 
 This is a free, open-source Chrome browser extension. It hides the "Announcement" banner from the Find Work page on Upwork with a toggle button to optionally show the banner. This extension
 
+The currently published Chome Extension can be installed via the [Chrome Web Store](https://chromewebstore.google.com/detail/upwork-optimizer/edilppbgpnajdkflhjcjjjlnkddnmcpi)
+
+If you want to install it to run your own version or make contributions, you may do so thusly:
+
 ## Installation
 
 1. Clone this repository:
@@ -22,8 +26,8 @@ After installation, the extension should be turned on, but you can confirm by fi
 
 ## Contributing
 
-Contributions are welcome. Please fork this repository and submit a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
+Contributions are welcome! Please fork this repository and submit a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 
-This project is licensed under the MIT License - see the Licence file for details.
+This project is licensed under the MIT License - see the [License](LICENSE) file for details.
