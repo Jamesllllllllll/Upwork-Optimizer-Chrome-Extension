@@ -42,15 +42,26 @@ function createToggleSwitch() {
 }
 
 if (document.querySelector('.container')) {
-  createToggleSwitch();
+  const announcementElement = document.querySelector(
+    'div[data-test="announcements"]'
+  );
+  if (announcementElement) {
+    createToggleSwitch();
+  }
 }
 
 function waitForElement() {
   const observer = new MutationObserver((mutations, obs) => {
     for (let mutation of mutations) {
       for (let addedNode of mutation.addedNodes) {
-        if (addedNode.nodeType === 1 && (addedNode.classList.contains('container') || addedNode.querySelector('.container'))) {
-          const container = addedNode.classList.contains('container') ? addedNode : addedNode.querySelector('.container');
+        if (
+          addedNode.nodeType === 1 &&
+          (addedNode.classList.contains('container') ||
+            addedNode.querySelector('.container'))
+        ) {
+          const container = addedNode.classList.contains('container')
+            ? addedNode
+            : addedNode.querySelector('.container');
           const toggleSwitch = createToggleSwitch();
           container.prepend(toggleSwitch);
           obs.disconnect();
@@ -62,7 +73,7 @@ function waitForElement() {
 
   observer.observe(document.body, {
     childList: true,
-    subtree: true
+    subtree: true,
   });
 }
 

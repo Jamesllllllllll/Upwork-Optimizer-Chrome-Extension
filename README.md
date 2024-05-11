@@ -6,6 +6,10 @@ This is a free, open-source Chrome browser extension. It hides the "Announcement
 
 1. Clone this repository:
 
+```shell
+git clone https://github.com/Jamesllllllllll/Upwork-Optimizer-Chrome-Extension.git
+```
+
 2. Navigate to `chrome://extensions/` in your Chrome browser.
 
 3. Enable Developer Mode by toggling the switch at the top-right.
